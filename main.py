@@ -1,4 +1,7 @@
-from flet import ( app, colors, Page, ElevatedButton, Row, TextField, TextAlign, TextStyle )
+from flet import (
+    app, colors, Page, ElevatedButton, Row,
+    TextField, TextAlign, TextStyle, Container, Column
+)
 
 
 def main(page: Page):
@@ -54,6 +57,18 @@ def main(page: Page):
             ElevatedButton(text='=',  on_click=button_click),
         ]
     )
+    container = Container(
+        width=350, padding=20,
+        bgcolor=colors. BLACK,
+        content=Column(
+            [
+                result,
+                button_row0, button_row1, button_row2,
+                button_row3, button_row4
+            ]
+        )
+    )
+    page.add(container)
 
 
 if __name__ == '__main__':
