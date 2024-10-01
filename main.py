@@ -1,6 +1,9 @@
-import flet as ft
+from flet import (app, Page)
 
-def main(page: ft.Page):
-    page.add(ft.Text(value="Hello, World!"))
 
-ft.app(target=main)
+def main(page: Page):
+    page.title = "Calculator"
+
+
+if __name__ == '__main__':
+    app(target=main)
