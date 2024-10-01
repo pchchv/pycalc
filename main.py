@@ -1,8 +1,16 @@
-from flet import ( app, Page, ElevatedButton, Row )
+from flet import ( app, colors, Page, ElevatedButton, Row, TextField, TextAlign, TextStyle )
 
 
 def main(page: Page):
     page.title = "Calculator"
+    result = TextField(
+        hint_text='0', text_size=20,
+        color='white', text_align=TextAlign.RIGHT,
+        hint_style=TextStyle(
+            color=colors.WHITE, size=20
+        ),
+        read_only=True
+    )
 
     def button_click(e):
         pass
