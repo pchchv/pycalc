@@ -16,7 +16,16 @@ def main(page: Page):
     )
 
     def button_click(e):
-        pass
+        if e.control.text == "=":
+            try:
+                result.value = str(eval(result.value))
+            except Exception:
+                result.value = "Error"
+        elif e.control.text == "C":
+            result.value = ""
+        else:
+            result.value += e.control.text
+        result.update()
 
     button_row0 = Row(
         [
