@@ -2,10 +2,13 @@ from flet import (
     app, colors, border_radius, Page, ElevatedButton, Row,
     TextField, TextAlign, TextStyle, Container, Column
 )
+from flet_core import ThemeMode
 
 
 def main(page: Page):
     page.title = "Calculator"
+    page.theme_mode = ThemeMode.DARK
+    page.horizontal_alignment = page.vertical_alignment = 'center'
     result = TextField(
         hint_text='0', text_size=20,
         color='white', text_align=TextAlign.RIGHT,
