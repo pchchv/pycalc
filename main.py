@@ -1,5 +1,5 @@
 from flet import (
-    app, colors, Page, ElevatedButton, Row,
+    app, colors, border_radius, Page, ElevatedButton, Row,
     TextField, TextAlign, TextStyle, Container, Column
 )
 
@@ -87,7 +87,7 @@ def main(page: Page):
     )
     container = Container(
         width=350, padding=20,
-        bgcolor=colors. BLACK,
+        bgcolor=colors.BLACK, border_radius=border_radius.all(20),
         content=Column(
             [
                 result,
