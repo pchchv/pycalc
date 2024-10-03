@@ -29,41 +29,60 @@ def main(page: Page):
 
     button_row0 = Row(
         [
-            ElevatedButton(text='C',  on_click=button_click),
-            ElevatedButton(text='^',  on_click=button_click),
-            ElevatedButton(text='%',  on_click=button_click),
-            ElevatedButton(text='/',  on_click=button_click),
+            ElevatedButton(text='C', expand=1, on_click=button_click,
+                           bgcolor=colors.RED_ACCENT, color=colors.WHITE),
+            ElevatedButton(text='^', expand=1, on_click=button_click,
+                           bgcolor=colors.BLUE_ACCENT_100,
+                           color=colors.RED_900
+                           ),
+            ElevatedButton(text='%', expand=1, on_click=button_click,
+                           bgcolor=colors.BLUE_ACCENT_100,
+                           color=colors.RED_900
+                           ),
+            ElevatedButton(text='/', expand=1, on_click=button_click,
+                           bgcolor=colors.BLUE_ACCENT_100,
+                           color=colors.RED_900
+                           ),
         ]
     )
     button_row1 = Row(
         [
-            ElevatedButton(text='7',  on_click=button_click),
-            ElevatedButton(text='8',  on_click=button_click),
-            ElevatedButton(text='9',  on_click=button_click),
-            ElevatedButton(text='*',  on_click=button_click),
+            ElevatedButton(text='7', expand=1, on_click=button_click),
+            ElevatedButton(text='8', expand=1, on_click=button_click),
+            ElevatedButton(text='9', expand=1, on_click=button_click),
+            ElevatedButton(text='*', expand=1, on_click=button_click,
+                           bgcolor=colors.BLUE_ACCENT_100,
+                           color=colors.RED_900
+                           ),
         ]
     )
     button_row2 = Row(
         [
-            ElevatedButton(text='4',  on_click=button_click),
-            ElevatedButton(text='5',  on_click=button_click),
-            ElevatedButton(text='6',  on_click=button_click),
-            ElevatedButton(text='-',  on_click=button_click),
+            ElevatedButton(text='4', expand=1, on_click=button_click),
+            ElevatedButton(text='5', expand=1, on_click=button_click),
+            ElevatedButton(text='6', expand=1, on_click=button_click),
+            ElevatedButton(text='-', expand=1, on_click=button_click,
+                           bgcolor=colors.BLUE_ACCENT_100
+                           ),
         ]
     )
     button_row3 = Row(
         [
-            ElevatedButton(text='1',  on_click=button_click),
-            ElevatedButton(text='2',  on_click=button_click),
-            ElevatedButton(text='3',  on_click=button_click),
-            ElevatedButton(text='+',  on_click=button_click),
+            ElevatedButton(text='1', expand=1, on_click=button_click),
+            ElevatedButton(text='2', expand=1, on_click=button_click),
+            ElevatedButton(text='3', expand=1, on_click=button_click),
+            ElevatedButton(text='+', expand=1, on_click=button_click,
+                           bgcolor=colors.BLUE_ACCENT_100,
+                           color=colors.RED_900),
         ]
     )
     button_row4 = Row(
         [
-            ElevatedButton(text='0',  on_click=button_click),
-            ElevatedButton(text='.',  on_click=button_click),
-            ElevatedButton(text='=',  on_click=button_click),
+            ElevatedButton(text='0', expand=1, on_click=button_click),
+            ElevatedButton(text='.', expand=1, on_click=button_click),
+            ElevatedButton(text='=', expand=2, on_click=button_click,
+                           bgcolor=colors.GREEN_ACCENT, color=colors.AMBER
+                           ),
         ]
     )
     container = Container(
